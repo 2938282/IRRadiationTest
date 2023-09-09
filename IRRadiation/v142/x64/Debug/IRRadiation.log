@@ -1,0 +1,12 @@
+﻿  pch.cpp
+  dllmain.cpp
+  IRRadiate.cpp
+C:\Users\gcx\Desktop\光电\IRRadiationTest-VS2022\IRRadiation\IRRadiate.cpp(60,9): warning C4101: “fval”: 未引用的局部变量
+C:\Users\gcx\Desktop\光电\IRRadiationTest-VS2022\IRRadiation\IRRadiate.cpp(101,30): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\gcx\Desktop\光电\IRRadiationTest-VS2022\IRRadiation\IRRadiate.cpp(94,9): warning C4101: “fval”: 未引用的局部变量
+C:\Users\gcx\Desktop\光电\IRRadiationTest-VS2022\IRRadiation\IRRadiate.cpp(269,26): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\gcx\Desktop\光电\IRRadiationTest-VS2022\IRRadiation\IRRadiate.cpp(312,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\gcx\Desktop\光电\IRRadiationTest-VS2022\IRRadiation\IRRadiate.cpp(315,14): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  正在生成代码...
+    正在创建库 C:\Users\gcx\Desktop\光电\IRRadiationTest-VS2022\v142\x64\Debug\IRRadiation-d.lib 和对象 C:\Users\gcx\Desktop\光电\IRRadiationTest-VS2022\v142\x64\Debug\IRRadiation-d.exp
+  IRRadiation.vcxproj -> C:\Users\gcx\Desktop\光电\IRRadiationTest-VS2022\v142\x64\Debug\IRRadiation-d.dll

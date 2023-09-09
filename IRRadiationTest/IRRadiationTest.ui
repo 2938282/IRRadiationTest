@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IRRadiationTestClass</class>
+ <widget class="QMainWindow" name="IRRadiationTestClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>1300</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>IRRadiationTest</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="RadiationForm" name="tabRadiation">
+       <attribute name="title">
+        <string>红外辐射亮度分析</string>
+       </attribute>
+      </widget>
+      <widget class="PlankForm" name="tabPlanck">
+       <attribute name="title">
+        <string>普朗克定律模拟</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1600</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="exportRadData"/>
+    <addaction name="exportRadChart"/>
+    <addaction name="separator"/>
+    <addaction name="importSunData"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="clearTable"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>新建标签页</string>
+    </property>
+    <addaction name="newRadTab"/>
+    <addaction name="newPlankTab"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="exportRadData">
+   <property name="text">
+    <string>导出数据</string>
+   </property>
+  </action>
+  <action name="exportRadChart">
+   <property name="text">
+    <string>导出图片</string>
+   </property>
+  </action>
+  <action name="clearTable">
+   <property name="text">
+    <string>清空表格</string>
+   </property>
+  </action>
+  <action name="newRadTab">
+   <property name="text">
+    <string>红外辐射亮度分析</string>
+   </property>
+  </action>
+  <action name="newPlankTab">
+   <property name="text">
+    <string>普朗克定律模拟</string>
+   </property>
+  </action>
+  <action name="importSunData">
+   <property name="text">
+    <string>导入太阳特征模板</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>RadiationForm</class>
+   <extends>QWidget</extends>
+   <header>RadiationForm.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PlankForm</class>
+   <extends>QWidget</extends>
+   <header>PlankForm.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="IRRadiationTest.qrc"/>
+ </resources>
+ <connections/>
+</ui>
